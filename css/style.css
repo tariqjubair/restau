@@ -1,0 +1,552 @@
+
+/* ==== ==== ALL Common CSS Start ==== ==== */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ol, ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+button:focus {
+	border: none;
+    outline: none;
+	box-shadow: none;
+}
+
+/* ==== ==== ALL Common CSS End ==== ==== */
+
+/* ==== ==== Header Part Start Here ==== ==== */
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: #ffffff;
+    margin-left: 34px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    content: '';
+    height: 5px;
+    width: 80px;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.header_bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+}
+
+.navbar-nav .nav-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-toggler i {
+    font-size: 25px;
+    color: white;
+    line-height: 40px;
+    transition: all linear .3s;
+}
+
+.menubar {
+    height: 40px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+/* ==== ==== Header Part Ends Here ==== ==== */
+
+/* ==== ==== Banner Part Start Here ==== ==== */
+
+#banner {
+    padding-top: 215px;
+    padding-bottom: 140px;
+    background-image: url(../images/banner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    overflow: auto;
+}
+
+.ban_text h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 90px;
+    color: #ffffff;
+    padding-bottom: 24px;
+    line-height: 118px;
+}
+
+.ban_btn a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    border: 1px solid #e1d9b5;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 22px 51px 20px 50px;
+    margin-right: 25px;
+    margin-top: 34px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    
+}
+
+.ban_btn a:hover {
+    border: 1px solid #121005;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* ==== ==== Banner Part Ends Here ==== ==== */
+
+/* ==== ==== Right_food Part Start Here ==== ==== */
+
+#rt_food {
+    background-image: url(../images/rt_food_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rt_food_olay {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(to left, rgba(1, 1, 1, 0.3), rgba(255, 255, 255, 0.3));
+}
+
+.rt_food_text h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #cc9900;
+    padding-bottom: 19px;
+}
+
+.rt_food_text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4c4c4c;
+    line-height: 24px;
+    padding: 0px 50px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+#rt_food .sp_img_pad {
+    padding-left: 70px;
+}
+
+.rt_food_dish {
+    position: relative;
+}
+
+.rt_food_dish img {
+    position: absolute;
+    top: -51px;
+    left: -55px;
+    transition: all linear .7s;
+    -webkit-transition: all linear .7s;
+    -moz-transition: all linear .7s;
+    -ms-transition: all linear .7s;
+    -o-transition: all linear .7s;
+}
+
+.rt_food_dish img:hover {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+/* ==== ==== Right_food Part Ends Here ==== ==== */
+
+/* ==== ==== Ingredient Part Start Here ==== ==== */
+
+#ingred {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/ingred_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ingred_box {
+    padding-top: 82px;
+    padding-bottom: 78px;
+    background: rgba(0, 0, 0, 0.67);
+    margin-right: 25px;
+}
+
+.ingred_box h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+    padding-bottom: 21px;
+}
+
+.ingred_box p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+    padding: 0 40px;
+    padding-top: 25px;
+    padding-bottom: 69px;
+}
+
+.ingred_box a {
+    margin-right: 27px;
+    transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+
+.ingred_box a:hover {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.ingred_box a.sp_rt:hover {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+/* ==== ==== Ingredient Part Ends Here ==== ==== */
+
+/* ==== ==== Food_Menu Part Start Here ==== ==== */
+
+#food_menu {
+    background-image: url(../images/menu_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.food_menu_olay {
+    padding-top: 105px;
+    padding-bottom: 100px;
+    background-image: linear-gradient(rgba(32, 90, 91, 0.09), rgba(255, 255, 255, 0.1));
+    -webkit-box-shadow: inset 0px 0px 80px -1px rgba(0,0,0,0.46);
+-moz-box-shadow: inset 0px 0px 80px -1px rgba(0,0,0,0.46);
+box-shadow: inset 0px 0px 80px -1px rgba(0,0,0,0.46);  
+}
+
+.menu_box {
+    margin-bottom: 70px;
+}
+
+.menu_head {
+    padding-bottom: 30px;
+}
+
+.menu_head h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #cc9900;
+    padding-bottom: 19px;
+}
+
+.menu_item {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.menu_item h4 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 21px;
+    color: #c89f2d;
+    display: inline-block;
+    padding-bottom: 28px;
+}
+
+.menu_item h4.flt_rt {
+    float: right;
+    padding-top: 3px;
+}
+
+.menu_item p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4c4c4c;
+}
+
+.menu_item::after {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #e2d4a6;
+}
+
+/* ==== ==== Food_Menu Part Ends Here ==== ==== */
+
+/* ==== ==== Great_Reviews Part Start Here ==== ==== */
+
+#review {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/review_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.review_box {
+    padding-top: 80px;
+    padding-bottom: 104px;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.review_box h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+    padding-bottom: 18px;
+}
+
+.review_box img.sp_pos {
+    position: absolute;
+    top: 165px;
+    left: 54px;
+}
+
+.review_box h4 {
+    font-family: 'Gentium Book Basic', serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #dde0df;
+    line-height: 45px;
+    padding: 0px 95px;
+    padding-top: 16px;
+    padding-bottom: 35px;
+}
+
+.review_box p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* ==== ==== Great_Reviews Part Ends Here ==== ==== */
+
+/* ==== ==== Right_Food_Form Part Start Here ==== ==== */
+
+#rt_food_form {
+    background-image: url(../images/rt_food_form_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rt_food_form_olay {
+    padding-top: 100px;
+    padding-bottom: 102px;
+    background-image: linear-gradient(rgba(32, 90, 91, 0.09), rgba(255, 255, 255, 0.1));
+    -webkit-box-shadow: inset 0px 0px 80px -1px rgba(0,0,0,0.46);
+    -moz-box-shadow: inset 0px 0px 80px -1px rgba(0,0,0,0.46);
+    box-shadow: inset 0px 0px 80px -1px rgba(0,0,0,0.46);  
+}
+
+.rt_food_form_text {
+    margin-bottom: 42px;
+}
+
+.rt_food_form_text h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: #cc9900;
+    padding-bottom: 20px;
+}
+
+.rt_food_form_text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #4c4c4c;
+    line-height: 24px;
+    padding: 0 10px;
+}
+
+.rt_food_form_text p.sp_para_pd {
+    padding-top: 25px;
+    padding-bottom: 12px;
+}
+
+.rt_form_field {
+    margin-bottom: 26px;
+}
+
+.rt_form_field h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #c9a131;
+    padding-bottom: 10px;
+}
+
+.rt_form_field input {
+    height: 34px;
+    width: 100%;
+    border: 1px solid #c8c6c6;
+    padding-left: 13px;
+    padding-right: 10px;
+    line-height: 34px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #7c7c7c;
+}
+
+.rt_form_field input:focus {
+    border: 1px solid #c89f2d;
+}
+
+.rt_form_field ::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.rt_food_btn button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    background: #c9a131;
+    padding: 11px 60px 12px 63px;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+/* ==== ==== Right_Food_Form Part Ends Here ==== ==== */
+
+/* ==== ==== Footer Part Start Here ==== ==== */
+
+#footer {
+    padding-top: 60px;
+    padding-bottom: 70px;
+    background: #191919;
+}
+
+.footer_part h3 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 21px;
+    color: #fefefe;
+    padding-bottom: 13px;
+}
+
+.footer_part p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 24px;
+}
+
+.footer_part .sp_para_pd {
+    padding-top: 18px;
+}
+
+.footer_part .sp_para_pd_b {
+    padding-bottom: 44px;
+}
+
+.footer_part .item_bold {
+    font-weight: 700;
+}
+
+.footer_social i {
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* ==== ==== Footer Part Ends Here ==== ==== */
+
